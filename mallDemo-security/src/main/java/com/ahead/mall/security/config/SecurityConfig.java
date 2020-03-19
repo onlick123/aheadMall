@@ -32,7 +32,7 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
         ExpressionUrlAuthorizationConfigurer<HttpSecurity>.ExpressionInterceptUrlRegistry registry = httpSecurity.authorizeRequests();
 //        不需要保护的资源路径允许访问（白名单）
         for(String url :ignoreUrlsConfig().getUrls()){
-            System.out.println("测试"+url);
+//            System.out.println("测试"+url);
           registry.antMatchers(url).permitAll();//允许放行
         }
         //允许跨域请求的OPTIONS请求
@@ -64,6 +64,7 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
         }
 
     }
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService())

@@ -170,17 +170,17 @@
                 <version>${aliyun-oss.version}</version>
             </dependency>
             <!--集成logstash-->
-<!--            <dependency>-->
-<!--                <groupId>net.logstash.logback</groupId>-->
-<!--                <artifactId>logstash-logback-encoder</artifactId>-->
-<!--                <version>${logstash-logback.version}</version>-->
-<!--            </dependency>-->
-<!--            &lt;!&ndash;MinIO JAVA SDK&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>io.minio</groupId>-->
-<!--                <artifactId>minio</artifactId>-->
-<!--                <version>${minio.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>${logstash-logback.version}</version>
+            </dependency>
+            <!--MinIO JAVA SDK-->
+            <dependency>
+                <groupId>io.minio</groupId>
+                <artifactId>minio</artifactId>
+                <version>${minio.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
